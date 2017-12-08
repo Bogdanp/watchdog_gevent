@@ -1,4 +1,5 @@
-engines:
+version: "2"
+plugins:
   duplication:
     enabled: false
   fixme:
@@ -9,6 +10,3 @@ engines:
     enabled: true
     config:
       threshold: "C"
-ratings:
-  paths:
-  - "**.py"
