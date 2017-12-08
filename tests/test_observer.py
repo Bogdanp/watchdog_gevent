@@ -37,7 +37,7 @@ def test_can_watch_for_changes_with_gevent():
     # And an observer that dispatches to that handler
     try:
         observer = Observer()
-        observer.schedule(Handler(), __file__)
+        observer.schedule(Handler(), rel(".."), recursive=True)
         observer.start()
 
         # When I touch this file
