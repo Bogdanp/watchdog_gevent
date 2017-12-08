@@ -10,6 +10,6 @@ install:
   - pip install -I "coverage>4.0,<4.4"
 script:
   - py.test
-  - cd example && ./test.sh
+  - cd examples && ./test.sh
 after_success:
   - CODECLIMATE_REPO_TOKEN=bd27affd4719a319a092fe65ad5ba8ba81f455d5f90821ccbcd30a9088e93577 codeclimate-test-reporter
