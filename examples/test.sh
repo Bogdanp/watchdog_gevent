@@ -2,6 +2,9 @@
 
 set -e
 
+trap 'kill $(jobs -p)' EXIT
+
+
 log() {
     echo "$(date):" "$@"
 }
@@ -10,8 +13,7 @@ rm -f output
 log "Removed output file."
 
 python example.py >output 2>&1 &
-pid=$!
-log "Subprocess started. pid=$pid"
+log "Subprocess started."
 
 sleep 1
 mkdir data
@@ -29,9 +31,6 @@ sleep 1
 rm -r data
 log "Removed data folder."
 sleep 1
-
-kill $pid
-log "Stopped process."
 
 
 assert_contains() {
