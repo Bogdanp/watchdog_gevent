@@ -1,4 +1,8 @@
 version: "2"
+checks:
+  method-complexity:
+    config:
+      threshold: 13
 plugins:
   duplication:
     enabled: false
