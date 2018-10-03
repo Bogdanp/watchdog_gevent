@@ -1,8 +1,6 @@
 # watchdog_gevent
 
 [![Build Status](https://travis-ci.org/Bogdanp/watchdog_gevent.svg?branch=master)](https://travis-ci.org/Bogdanp/watchdog_gevent)
-[![Test Coverage](https://api.codeclimate.com/v1/badges/b288682ded2e897df6c3/test_coverage)](https://codeclimate.com/github/Bogdanp/watchdog_gevent/test_coverage)
-[![Maintainability](https://api.codeclimate.com/v1/badges/b288682ded2e897df6c3/maintainability)](https://codeclimate.com/github/Bogdanp/watchdog_gevent/maintainability)
 [![PyPI version](https://badge.fury.io/py/watchdog-gevent.svg)](https://badge.fury.io/py/watchdog-gevent)
 
 **watchdog_gevent** is a [gevent]-based observer for [watchdog].
