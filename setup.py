@@ -31,4 +31,6 @@ setup(
         "watchdog>=0.8",
     ],
     include_package_data=True,
+    author="Bogdan Popa",
+    author_email="bogdan@defn.io",
 )
