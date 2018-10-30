@@ -30,6 +30,16 @@ setup(
         "gevent>=1.1",
         "watchdog>=0.8",
     ],
+    extras_require={
+        "dev": [
+            "bumpversion",
+            "flake8",
+            "flake8-quotes",
+            "pytest",
+            "pytest-cov",
+            "twine",
+        ]
+    },
     include_package_data=True,
     author="Bogdan Popa",
     author_email="bogdan@defn.io",

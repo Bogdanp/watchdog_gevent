@@ -14,9 +14,7 @@
 
 ## Setup
 
-Use [pipenv][pipenv] (or plain pip) to install the package:
-
-    pipenv install watchdog_gevent
+    pip install watchdog_gevent
 
 
 ## Usage
