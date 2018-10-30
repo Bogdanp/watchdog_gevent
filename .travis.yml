@@ -3,7 +3,6 @@ sudo: required
 python:
   - "3.6"
 install:
-  - pip install -U pipenv
-  - pipenv install --dev
+  - pip install -e '.[dev]'
 script:
   - py.test
