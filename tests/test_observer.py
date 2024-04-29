@@ -37,7 +37,7 @@ def test_can_watch_for_changes_with_gevent():
     # And an observer that dispatches to that handler
     try:
         observer = Observer()
-        observer.schedule(Handler(), rel(".."), recursive=True)
+        observer.schedule(Handler(), rel(), recursive=True)
         observer.start()
 
         # When I touch this file
@@ -50,9 +50,7 @@ def test_can_watch_for_changes_with_gevent():
         assert count >= 2
 
         # And the event should have been observed
-        assert events == [
-            FileModifiedEvent(__file__)
-        ]
+        assert events == [FileModifiedEvent(__file__)]
     finally:
         observer.stop()
         observer.join()

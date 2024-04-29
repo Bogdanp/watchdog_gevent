@@ -28,7 +28,7 @@ setup(
     ],
     install_requires=[
         "gevent>=1.1",
-        "watchdog>=0.8",
+        "watchdog>=4.0",
     ],
     extras_require={
         "dev": [
