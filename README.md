@@ -2,6 +2,7 @@
 
 [![Build Status](https://travis-ci.org/Bogdanp/watchdog_gevent.svg?branch=master)](https://travis-ci.org/Bogdanp/watchdog_gevent)
 [![PyPI version](https://badge.fury.io/py/watchdog-gevent.svg)](https://badge.fury.io/py/watchdog-gevent)
+[![watchdog-gevent Downloads Last Month](https://assets.piptrends.com/get-last-month-downloads-badge/watchdog-gevent.svg 'watchdog-gevent Downloads Last Month by pip Trends')](https://piptrends.com/package/watchdog-gevent)
 
 **watchdog_gevent** is a [gevent]-based observer for [watchdog].
 
