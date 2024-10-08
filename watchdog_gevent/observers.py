@@ -6,13 +6,13 @@ from watchdog.events import (
     DirModifiedEvent,
     FileDeletedEvent,
     FileCreatedEvent,
-    FileModifiedEvent
+    FileModifiedEvent,
 )
 from watchdog.observers.api import (
     EventEmitter,
     BaseObserver,
     DEFAULT_EMITTER_TIMEOUT,
-    DEFAULT_OBSERVER_TIMEOUT
+    DEFAULT_OBSERVER_TIMEOUT,
 )
 
 
@@ -47,11 +47,14 @@ def _get_contents(path):
 
 
 class GeventEmitter(EventEmitter):
-    """gevent-based emitter.
-    """
+    """gevent-based emitter."""
 
-    def __init__(self, event_queue, watch, timeout=DEFAULT_EMITTER_TIMEOUT, event_filter=None):
-        EventEmitter.__init__(self, event_queue, watch, timeout, event_filter)
+    def __init__(
+        self, event_queue, watch, timeout=DEFAULT_EMITTER_TIMEOUT, event_filter=None
+    ):
+        EventEmitter.__init__(
+            self, event_queue, watch, timeout=timeout, event_filter=event_filter
+        )
 
         self._hub = gevent.get_hub()
         self._watchlist = set()
