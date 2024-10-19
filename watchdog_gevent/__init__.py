@@ -10,7 +10,7 @@ except (ImportError, RuntimeError) as e:  # pragma: no cover
     warnings.warn(str(e), ImportWarning, stacklevel=2)
 
 
-__version__ = "0.2.0"
+__version__ = "0.2.1"
 __all__ = [
     "GeventEmitter",
     "GeventObserver",
