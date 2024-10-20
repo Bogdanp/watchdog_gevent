@@ -34,7 +34,7 @@ and the `threading` module has been monkeypatched.  This library
 ## Limitations
 
 The package only works if you use gevent to monkeypatch the threading
-module.  Additionally, file and directory events are not emitted.
+module.  Additionally, file and directory move events are not emitted.
 
 
 ## License
